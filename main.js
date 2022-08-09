@@ -1,16 +1,6 @@
-
-let focoInicial = document.querySelector('.tecla_pom');
-focoInicial.focus();
-
 function tocaSom(seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
-
-    // if (elemento === null) {
-    //     console.log('Elemento não encontrado')
-    // }
-
-
-    // if (elemento) = o JS já entende que só isso quer dizer que elemento nao é nulo, nao precisa por if elemento != null
+  
     if (elemento && elemento.localName === 'audio') {
         elemento.play();
     }
@@ -43,3 +33,6 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         tecla.classList.remove('ativa');
     }
 }
+
+let focoInicial = document.querySelector('.tecla_pom');
+focoInicial.focus();
